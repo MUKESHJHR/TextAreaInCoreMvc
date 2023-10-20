@@ -1,0 +1,9 @@
+﻿@model TextAreaInCoreMvc.Models.Employee
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@Html.TextBoxFor(m => m.EmployeeName, new { @class = "form-control"})<br />
+@Html.TextArea("Address",null,new{@class="form-control", rows=4, cols=40})
